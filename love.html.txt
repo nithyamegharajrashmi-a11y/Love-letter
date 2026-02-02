@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>God’s Love Letter 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #ffd6e8, #fff0f6);
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  color: #ff4f8b;
+}
+
+
+.photo {
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  margin: 20px 0;
+}
+
+
+.letter {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+
+.flower {
+  position: fixed;
+  font-size: 24px;
+  animation: float 10s linear infinite;
+}
+
+
+@keyframes float {
+  0% {transform: translateY(100vh); opacity: 0;}
+  10% {opacity: 1;}
+  100% {transform: translateY(-10vh); opacity: 0;}
+}
+
+
+.heart {
+  position: fixed;
+  color: red;
+  font-size: 20px;
+  animation: hearts 6s linear infinite;
+}
+
+
+@keyframes hearts {
+  0% {transform: translateY(100vh) scale(1); opacity: 1;}
+  100% {transform: translateY(-10vh) scale(0.5); opacity: 0;}
+}
+</style>
+</head>
+
+
+<body>
+
+
+<div class="container">
+<h1>Hello My God’s Love Letter 💌</h1>
+
+
+<img src="photo.jpg" alt="Our Memory" class="photo">
+
+
+<div class="letter">
+<p>
+My fucking love, listen to me closely, yeah?<br><br>
+
+
+I love you in ways I can’t fucking measure and I promise I’ll keep choosing you even on days when my heart feels tired as hell.<br>
+I hope you never fucking give up on me, especially when I’m weak, messy, dramatic and overthinking everything, huh?<br><br>
+
+
+I want you to keep being that playful idiot who plays shadow cricket and makes me laugh for no fucking reason.<br>
+I wanna be your forever lift-dance partner, swaying stupidly in random places like we own the damn world.<br>
+I hope you always stay my baby, my soft place, my safe fucking home.<br><br>
+
+
+I wanna keep making you happy the way you deserve, even when I don’t know how the fuck to say it properly.<br>
+I hope I always find myself in your arms when I’m drunk, sober, emotional, excited, broken, breathing or barely holding on.<br><br>
+
+
+I want you to choose me in every lifetime, every universe, every fucking version of us.<br>
+If I had to go back in time and suffer everything again just to meet you at the end and keep you forever, I wouldn’t think twice.<br><br>
+
+
+I hope you always see me as cute, not heavy with insecurities.<br>
+I hope you look at my flaws, stretch marks, scars and tired eyes and still love me the same damn way.<br>
+That look in your eyes, your cute dimple and your blushy face make my heart act stupid as fuck.<br><br>
+
+
+Let’s chase dreams together, travel, laugh loudly, fight gently and love wildly.<br>
+I hope one day your parents see me the way you see me.<br><br>
+
+
+Love me till time forgets how to end, but selfishly baby, let us never fucking stop.<br>
+So here’s my forever, messy, emotional and real — my heart chose you and it’s not changing its damn mind.<br><br>
+
+
+Forever yours 💗
+</p>
+</div>
+
+
+</div>
+
+
+<script>
+function createHearts() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  document.body.appendChild(heart);
+
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}
+
+
+setInterval(createHearts, 500);
+</script>
+
+
+</body>
+</html>
